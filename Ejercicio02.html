@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../ExamenThonny/estilo.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+   
     <title>Document</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<body class="container mt-5" style="background-image: url('https://cdn.pixabay.com/photo/2019/03/12/17/18/trees-4051288_1280.jpg'); ">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="../ExamenThonny/index.html">Inicio</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -29,7 +29,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="../ExamenThonny/Ejercio01.html">Ejercicio01</a></li>
-            <li><a class="dropdown-item" href="../ExamenThonny/Ejercicio02.html">Ejercicio02</a></li>
+          
 
             <li><a class="dropdown-item" href="/ExamenThonny/Ejercicio03.html">Ejercicio03</a></li>
              <li><a class="dropdown-item" href="../ExamenThonny/Ejercicio04.html">Ejercicio04</a></li>
@@ -46,8 +46,36 @@
     </div>
   </div>
 </nav>
-<h1 style="text-align: center; color: rgb(36, 20, 255);">EXAMEN EVALUACION 2 Thonny</h1>
+    <h2>Calculadora de Consumo de Gasolina</h2>
+    <form id="gasForm">
+        <div class="mb-3">
+            <label for="vehiculo" class="form-label">Tipo de vehículo</label>
+            <select class="form-select" id="vehiculo" required>
+                <option value="">Seleccione...</option>
+                <option value="17">Auto compacto (14–20 km/l)</option>
+                <option value="14">Sedán mediano (12–16 km/l)</option>
+                <option value="12">SUV pequeña (10–14 km/l)</option>
+                <option value="8">Camioneta/SUV grande (6–10 km/l)</option>
+                <option value="9.5">Pick-up (7–12 km/l)</option>
+                <option value="25">Auto híbrido (20–30 km/l)</option>
+            </select>
+        </div>
 
-    
+        <div class="mb-3">
+            <label for="consumo" class="form-label">Consumo promedio (km/l)</label>
+            <input type="number" id="consumo" class="form-control" readonly>
+        </div>
+
+        <div class="mb-3">
+            <label for="distancia" class="form-label">Distancia del viaje (km)</label>
+            <input type="number" id="distancia" class="form-control" min="1" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Calcular</button>
+    </form>
+
+    <div id="resultado" class="mt-4"></div>
+
+    <script src="/ExamenThonny/java2.js"></script>
 </body>
 </html>

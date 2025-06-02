@@ -1,0 +1,86 @@
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2019/03/12/17/18/trees-4051288_1280.jpg'); 
+  background-size: cover;            
+  background-position: center;       
+  background-repeat: no-repeat;    
+  height: 100vh;                    
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #343a40; 
+    color: rgb(22, 21, 21); 
+    padding: 2rem !important; 
+    border-radius: .5rem !important; 
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.25)!important;
+}
+
+h2 {
+    color: rgb(10, 10, 10); 
+}
+
+
+.texto-borde-blanco {
+    border: 1px solid white; 
+    padding: 5px 8px; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: rgb(10, 10, 10); 
+    border-radius: 5px; 
+    display: inline-block; 
+    margin-bottom: 5px;
+}
+
+
+.form-label {
+    color: rgb(0, 0, 0); 
+    margin-bottom: .5rem; 
+}
+
+.form-control,
+.form-select {
+    background-color: #495057;
+    color: white; 
+    border: 1px solid #6c757d; 
+}
+
+.form-control::placeholder { 
+    color: #ced4da;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: #495057;
+    color: white;
+    border-color: #80bdff; 
+    box-shadow: 0 0 0 0.25rem rgba(128, 189, 255, 0.25);
+}
+
+.alert-info {
+    background-color: #17a2b8;
+    color: white; 
+    border-color: #17a2b8;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+#resultado {
+    color: white; 
+    padding: 1rem;
+    border: 1px solid #6c757d;
+    border-radius: .25rem;
+    background-color: #495057;
+    margin-top: 1rem;
+}
